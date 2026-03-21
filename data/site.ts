@@ -6,7 +6,7 @@ export const siteData = {
   address: "Bartolomé Mitre 1401, Salta Capital",
   phone: "3874220511",
   whatsapp: "3875092119",
-  email: "cabrerabellomo@gmail.com",
+  email: "cabrerabellomo@hotmail.com",
 
   hours: "Lunes a viernes de 8:00 a 12:45",
 

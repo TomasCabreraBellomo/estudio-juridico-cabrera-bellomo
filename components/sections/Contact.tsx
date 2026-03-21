@@ -24,7 +24,8 @@ export default function Contact() {
             </p>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
-              El estudio brinda atención en <span className="font-semibold text-[#0b1f3a]">{siteData.location}</span>,
+              El estudio brinda atención en{" "}
+              <span className="font-semibold text-[#0b1f3a]">{siteData.location}</span>,
               de <span className="font-semibold text-[#0b1f3a]">lunes a viernes</span>,
               en horario de mañana.
             </p>
@@ -75,7 +76,40 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </div>
+
+        <div className="mt-16">
+  <div className="max-w-3xl">
+    <p className="text-sm font-medium uppercase tracking-[0.22em] text-slate-500">
+      Ubicación
+    </p>
+
+    <h3 className="mt-3 text-2xl font-semibold text-[#0b1f3a]">
+      Podés encontrarnos en:
+    </h3>
+
+    <div className="mt-4 h-1 w-16 rounded-full bg-[#c9a86a]" />
+
+    <p className="mt-4 text-slate-600">
+      {siteData.address}, {siteData.location}
+    </p>
+  </div>
+
+  <div className="mt-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.6760748088805!2d-65.4094193!3d-24.7722931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3c2b1b8344f%3A0x19080af5f93ec23e!2sEstudio%20Juridico%20Cabrera%20Bellomo%20%26%20asociados!5e0!3m2!1ses-419!2sar!4v1774105542262!5m2!1ses-419!2sar"
+      width="100%"
+      height="420"
+      style={{ border: 0 }}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Ubicación del estudio jurídico"
+    />
+  </div>
+</div>
+  
+</div>
+
+     
     </section>
   );
 }
